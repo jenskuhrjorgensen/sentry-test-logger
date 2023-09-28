@@ -6,7 +6,7 @@ index 34f161d..7720afa 100644
        logger[name] = (...args) => {
          if (enabled) {
            consoleSandbox(() => {
-+            console.log(`${PREFIX}[${name}]:`, ...args);
++            console.log(`test: ${PREFIX}[${name}]:`, ...args);
              worldwide.GLOBAL_OBJ.console[name](`${PREFIX}[${name}]:`, ...args);
            });
          }
